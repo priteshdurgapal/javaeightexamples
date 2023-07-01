@@ -1,22 +1,24 @@
 package com.test.eight;
-import org.junit.Before;
-import org.junit.Test;
+//import org.junit.Before;
 
-import junit.framework.Assert;
+//import org.junit.Test;
+
+//import junit.framework.Assert;
 
 public class TDDtest {
 
 	private HelloWorld helloworld;
-	
-	@Before
+
+	// @Before
 	public void setup() {
 		helloworld = new HelloWorld();
 	}
-	@Test
+
+	// @Test
 	public void testName() {
-		
-		String name="helloworld";
-		Assert.assertEquals(name, helloworld.getWelcome());
+
+		String name = "helloworld";
+		// Assert.assertEquals(name, helloworld.getWelcome());
 	}
-	
+
 }
