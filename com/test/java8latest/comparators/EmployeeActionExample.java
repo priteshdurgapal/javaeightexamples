@@ -29,6 +29,8 @@ public class EmployeeActionExample {
 		 Integer age = listOfEmployee.stream().map(e->e.getAge()).sorted(Comparator.reverseOrder()).findFirst().get();
 		 System.out.println(age);
 		 
+		 Integer age2 = listOfEmployee.stream().map(e->e.getAge()).max(Comparator.naturalOrder()).get();
+		 System.out.println("age2" + age);
 		 //20) Given a list of employees, sort all the employee on the basis of age? Use java 8 APIs only
 		 listOfEmployee.stream()
 		 .sorted( (Employee e1, Employee e2) -> e1.getAge()-(e2.getAge()))
